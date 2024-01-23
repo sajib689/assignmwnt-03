@@ -30,84 +30,195 @@
     </style>
     <!-- Common color -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'primary-color-btn': '#FF4240',
-                'title-color': '#131318'
-              }
-            }
-          }
-        }
-      </script>
-    
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color-btn": "#FF4240",
+              "title-color": "#131318",
+              "paragraph-color": "rgba(19, 19, 24, 0.60)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="manrope-font">
     <header class="container mx-auto">
-        <!-- Navbar section -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <a class="text-2xl lg:text-4xl font-extrabold text-title-color">Hockeys <span class="text-primary-color-btn">’</span> s</a>
+      <!-- Navbar section -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-base">
-                <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-                <i class="fa-solid fa-magnifying-glass mr-5 cursor-pointer"></i>
-              <a class="btn bg-primary-color-btn text-white font-semibold text-base lg:text-xl">Get Ticket</a>
-            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
           </div>
-          <!-- Banner slider section -->
-          <div class="carousel w-full mt-5">
-            <div id="slide1" class="carousel-item relative w-full lg:h-[85vh]">
-              <img src="./Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full lg:h-[85vh]">
-              <img src="./Images/2.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full lg:h-[85vh]">
-              <img src="./Images/3.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full lg:h-[85vh]">
-              <img src="./Images/4.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
-            </div>
+          <a class="text-2xl lg:text-4xl font-extrabold text-title-color"
+            >Hockeys <span class="text-primary-color-btn">’</span> s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass mr-5 cursor-pointer"></i>
+          <a
+            class="btn bg-primary-color-btn text-white font-semibold text-base lg:text-xl"
+            >Get Ticket</a
+          >
+        </div>
+      </div>
+      <!-- Banner slider section -->
+      <div class="carousel w-full mt-5">
+        <div id="slide1" class="carousel-item relative w-full lg:h-[85vh]">
+          <img src="./Images/1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full lg:h-[85vh]">
+          <img src="./Images/2.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full lg:h-[85vh]">
+          <img src="./Images/3.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full lg:h-[85vh]">
+          <img src="./Images/4.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
     </header>
+    <!-- main container -->
+    <main class="container mx-auto">
+      <div class="mt-20 lg:mt-40">
+        <div class="text-center">
+          <h1 class="text-3xl lg:text-4xl font-extrabold text-title-color">
+            Professional Hockeys Club
+          </h1>
+          <p class="mt-3 text-base font-medium text-paragraph-color">
+            "Professional Sajib Hockey Club: A dynamic and skilled team
+            dedicated to excelling in the sport of  <br /> hockey,
+            fostering professionalism, and creating a vibrant community of
+            passionate players."
+          </p>
+        </div>
+        <div class="mt-20 grid grid-rows-1 lg:grid-cols-4 gap-4">
+          <div class="text-center  mb-5">
+            <!-- Radial 1 -->
+            <div
+              class="radial-progress text-red-500"
+              style="--value: 87"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <h4 class="mt-3 text-xl font-semibold text-title-color">
+              Prayer Facility
+            </h4>
+            <p class="text-base font-light text-paragraph-color">
+              Dedicated space for prayer.
+            </p>
+          </div>
+          <div class="text-center  mb-5">
+            <!-- Radial 2 -->
+            <div
+              class="radial-progress text-[#49D293]"
+              style="--value: 95"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <h4 class="mt-3 text-xl font-semibold text-title-color">
+              Experienced Coach
+            </h4>
+            <p class="text-base font-light text-paragraph-color">
+              Skilled mentor for peak performance.
+            </p>
+          </div>
+          <div class="text-center  mb-5">
+            <!-- Radial 3 -->
+            <div
+              class="radial-progress text-[#FFB546]"
+              style="--value: 90"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <h4 class="mt-3 text-xl font-semibold text-title-color">
+              Senior Player
+            </h4>
+            <p class="text-base font-light text-paragraph-color">
+              "Seasoned expert in their domain."
+            </p>
+          </div>
+          <div class="text-center  mb-5">
+            <!-- Radial 4 -->
+            <div
+              class="radial-progress text-[#4C8DF1]"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h4 class="mt-3 text-xl font-semibold text-title-color">
+              Training Ground
+            </h4>
+            <p class="text-base font-light text-paragraph-color">
+              Training Ground: Skill development in focused spaces.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
